@@ -1,0 +1,19 @@
+name: Support request
+description: Ask a general question or report a beta issue. All submissions are public.
+body:
+  - type: markdown
+    attributes:
+      value: "Do not include private photos, notes, passphrases, identifiers, or unredacted logs. Use TestFlight or Google Play beta feedback for private reports."
+  - type: input
+    id: version
+    attributes:
+      label: WhisperPic version, phone model, and OS
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Question or steps to reproduce
+      description: Describe the issue without sensitive information.
+    validations:
+      required: true
